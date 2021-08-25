@@ -1,0 +1,96 @@
+/*** 
+
+====================================================================
+	Accordion Style
+====================================================================
+
+***/
+
+.accordion-box {
+    position: relative;
+}
+
+.accordion-box .block {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.accordion-box .block .acc-btn {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 600;
+    padding: 0px 10px 0px 35px;
+    transition: all 500ms ease;
+   
+    font-family: "Montserrat", sans-serif;
+}
+
+.accordion-box .block .icon-outer {
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    font-size: 18px;
+    transition: all 500ms ease;
+   
+}
+
+.accordion-box .block .icon-outer .icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.accordion-box .block .icon-outer .icon-plus {
+    opacity: 1;
+}
+
+.accordion-box .block .icon-outer .icon-minus {
+    opacity: 0;
+    font-weight: 300;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer .icon-minus {
+    opacity: 1;
+    color: #494b55;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer .icon-plus {
+    opacity: 0;
+}
+
+.accordion-box .block .acc-content {
+    position: relative;
+    display: none;
+}
+
+.accordion-box .block .acc-content .content-text {
+    padding-bottom: 6px;
+}
+
+.accordion-box .block .acc-content.current {
+    display: block;
+}
+
+.accordion-box .block .content {
+    position: relative;
+    font-size: 14px;
+    padding: 14px 30px 0px 35px;
+}
+
+.accordion-box .block .content .text {
+    margin-bottom: 20px;
+    line-height: 1.7em;
+    font-size: 17px;
+    color: #797979;
+    font-family: "Montserrat", sans-serif;
+}
+
+.accordion-box .block .content p:last-child {
+    margin-bottom: 0px;
+}

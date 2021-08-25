@@ -1,0 +1,70 @@
+
+/*** 
+
+====================================================================
+	Countdown style
+====================================================================
+
+***/
+
+.time-counter {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.time-counter .time-countdown {
+    position: relative;
+}
+
+.time-counter .time-countdown .counter-column {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 0px 0px;
+    color: $white;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.time-counter .time-countdown .counter-column:after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 5px;
+    width: 1px;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.time-counter .time-countdown .counter-column:last-child::after {
+    display: none;
+}
+
+.time-counter .time-countdown .counter-column .count {
+    position: relative;
+    display: block;
+    font-size: 50px;
+    line-height: 40px;
+    padding: 0px 10px;
+    color: $white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.time-counter .time-countdown .counter-column .unit {
+    position: absolute;
+    color: $white;
+    left: 0px;
+    bottom: -20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}

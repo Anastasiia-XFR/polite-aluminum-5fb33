@@ -1,0 +1,289 @@
+/*** 
+
+====================================================================
+	Cart Section style
+====================================================================
+
+***/
+
+.cart-section {
+    position: relative;
+    padding: 100px 0px 80px;
+}
+
+.cart-outer {
+    position: relative;
+}
+
+.checkout-page .cart-outer {
+    margin-bottom: 40px;
+}
+
+.cart-outer .table-outer {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cart-outer .cart-table {
+    width: 100%;
+    min-width: 900px;
+}
+
+.cart-table .cart-header {
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #f4f5f6;
+    color: #1c1c1c;
+    border: 1px solid #ebebeb;
+}
+
+.cart-table thead tr th {
+    line-height: 24px;
+    padding: 13px 28px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #494b55;
+    text-transform: capitalize;
+    border-right: 1px solid #ebebeb;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cart-table thead tr th .fa {
+    font-size: 18px;
+}
+
+.cart-table thead tr th.prod-column {
+    text-align: left;
+}
+
+.cart-table tbody tr td {
+    line-height: 24px;
+    padding: 25px 28px 20px;
+}
+
+.cart-table tbody tr .qty {
+    width: 200px;
+    padding-right: 80px;
+}
+
+.cart-table tbody tr .qty .quantity-spinner {
+    background: $white;
+}
+
+.cart-table tbody tr .prod-column .column-box {
+    position: relative;
+    min-height: 110px;
+}
+
+.cart-table tbody tr .prod-column .column-box .prod-thumb {
+    position: relative;
+    width: 100px;
+}
+
+.cart-table tbody tr .prod-column .column-box .prod-thumb img {
+    display: block;
+    max-width: 100%;
+}
+
+.cart-table tbody tr .prod-column .column-box h4 {
+    font-size: 14px;
+    color: #444444;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.cart-table tbody tr .prod-column .author {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 0px;
+}
+
+.cart-table tbody tr .sub-total {
+    font-weight: 400;
+    color: #797979;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cart-table tbody tr .remove-btn {
+    position: relative;
+    font-size: 14px;
+    color: #1c1c1c;
+    line-height: 30px;
+    font-weight: 500;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.cart-table tbody tr .remove-btn .fa {
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.cart-table tbody tr .remove-btn:hover {
+    color: #d2b871;
+}
+
+.cart-table tbody tr {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.cart-table tbody tr td {
+    vertical-align: middle;
+    color: #797979;
+    font-size: 17px;
+    border-left: 1px solid #ebebeb;
+}
+
+.cart-table tbody tr .total-price {
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cart-table tbody tr td:last-child {
+    border-right: 1px solid #ebebeb;
+    text-align: center;
+}
+
+.cart-table tbody tr td .prod-title {
+    position: relative;
+    font-size: 16px;
+    color: #797979;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cart-table tbody tr td .quantity-spinner {
+    padding: 5px 0px 5px 20px;
+    line-height: 24px;
+    height: 34px;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.cart-table tbody .available-info {
+    position: relative;
+    padding-left: 50px;
+}
+
+.cart-table tbody .available-info .icon {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: $white;
+    background: #223555;
+    border-radius: 50%;
+}
+
+.cart-section .cart-options {
+    position: relative;
+    padding: 28px 35px 15px;
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #ebebeb;
+    border-top: 0px;
+}
+
+.cart-section .apply-coupon {
+    position: relative;
+}
+
+.cart-section .apply-coupon .form-group {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.cart-section .apply-coupon .form-group input[type="text"] {
+    display: block;
+    line-height: 15px;
+    padding: 8px 10px;
+    border: 1px solid #eeeeee;
+    width: 130px;
+    height: 33px;
+    font-size: 14px;
+    background: $white;
+}
+
+.cart-section .btn-style-two {
+    padding: 3px 26px;
+    line-height: 24px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #bdaca8;
+    background-color: #bdaca8;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cart-section .btn-style-two:hover {
+    color: #494b55;
+}
+
+.cart-section .cart-options .btn-style-eight {
+    top: -2px;
+    padding: 7px 28px;
+}
+
+.cart-section .totals-table {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.cart-section .totals-table li {
+    line-height: 24px;
+    padding: 14px 22px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.cart-section .totals-table li:first-child {
+    background-color: #f9f9f9;
+}
+
+.cart-section .totals-table li h3 {
+    position: relative;
+    font-weight: 600;
+    color: #494b55;
+    font-size: 18px;
+}
+
+.cart-section .totals-table li:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding: 25px 30px;
+}
+
+.cart-section .totals-table .col {
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 24px;
+    width: 50%;
+    color: #494b55;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.cart-section .totals-table li .col:last-child {
+    text-align: right;
+    color: #797979;
+}
+
+.cart-section .totals-table .total .price {
+    color: #363636 !important;
+    font-weight: 700;
+}

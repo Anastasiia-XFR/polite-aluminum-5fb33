@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+
+{{- partial "header.html" . -}}
+
+
+<!-- BEGIN hero -->
+{{ if $data.certification.hero }}
+	{{ with $data.certification.hero }}
+		{{ partial "_hero-single.html" . }}
+	{{ end }}
+{{ end }}
+<!-- END hero -->
+
+
+<!-- BEGIN section -->
+{{ if $data.certification.project }}
+	{{ with $data.certification.project }}
+	<style>
+		.architecture-block {
+			margin-bottom: 60px;
+		}
+		.project-section .btn-ct {
+			margin-top: 0;
+		}
+	</style>
+		{{ partial "_project.html" . }}
+    {{ end }}
+{{ end }} 
+<!-- END section -->
+
+<!-- BEGIN section -->
+{{ if $data.certification.rates }}
+	{{ with $data.certification.rates }}
+	<style>
+		.pricing-section {
+			padding-top: 0;
+		}
+	</style>
+		{{ partial "_pricing.html" . }}
+    {{ end }}
+{{ end }} 
+<!-- END section -->
+
+<!-- BEGIN section -->
+{{ if $data.certification.domains }}
+	{{ with $data.certification.domains }}
+		{{ partial "_domains-single.html" . }}
+    {{ end }}
+{{ end }} 
+<!-- END section -->
+
+{{ if $data.certification.fee }}
+	{{ with $data.certification.fee }}
+		{{ partial "_fee.html" . }}
+	{{ end }}
+{{ end }}
+
+{{ if $data.certification.geo }}
+	{{ with $data.certification.geo }}
+	{{ $url := .Scratch.Set $.URL }}
+	{{ partial "_geo.html" . }}
+	{{ end }}
+{{ end }}
+
+<!-- BEGIN section -->
+{{ if $data.certification.str }}
+{{ with $data.certification.str }}
+	<div style="padding-top: 140px;">
+		{{ partial "_str.html" . }}
+	</div>
+{{ end }}
+{{ end }}
+<!-- END section -->
+
+{{- partial "_contacts.html" . -}}
+{{- partial "footer.html" . -}}
+{{- partial "_widget.html" . -}}
+{{ end }}

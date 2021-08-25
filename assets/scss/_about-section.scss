@@ -1,0 +1,419 @@
+
+
+/*** 
+
+====================================================================
+	About Section
+====================================================================
+
+***/
+
+.about-section {
+    position: relative;
+}
+
+.about-section .content-column {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.about-section .content-column h2 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: #494b55;
+    line-height: 1.2em;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.about-section .content-column h2:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 70px;
+    height: 2px;
+    background-color: #bdaca8;
+}
+
+.about-section .content-column .text {
+    position: relative;
+    color: #797979;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+.about-section .video-column {
+    position: relative;
+}
+
+.about-section .video-column .inner-column {
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-section .inner-container {
+    position: relative;
+    padding: 95px 0px 85px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/*** 
+
+====================================================================
+	About Section Two
+====================================================================
+
+***/
+
+.about-section-two {
+    position: relative;
+    padding: 80px 0px 90px;
+}
+
+.about-section-two .info-column {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.about-section-two .info-column .inner-column {
+    position: relative;
+    padding-top: 78px;
+}
+
+.about-section-two .info-column .inner-column .title-box {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+.about-section-two .info-column .inner-column .title-box:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 55px;
+    height: 3px;
+    background-color: #bdaca8;
+}
+
+.about-section-two .info-column h2 {
+    position: relative;
+    font-weight: 600;
+    color: #494b55;
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+
+.about-section-two .info-column .designation {
+    position: relative;
+    color: #797979;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-section-two .info-column .info-box {
+    position: relative;
+    padding-left: 60px;
+}
+
+.about-section-two .info-column .info-box .phone-icon {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #bdaca8;
+}
+
+.about-section-two .info-column .info-box h3 {
+    position: relative;
+    color: #494b55;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+.about-section-two .info-column .info-box h4 {
+    position: relative;
+    color: #494b55;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.about-section-two .info-column .image-column {
+    position: relative;
+}
+
+
+/*** 
+
+====================================================================
+	About Section Three
+====================================================================
+
+***/
+
+.about-section-three {
+    position: relative;
+}
+
+.about-section-three .sec-title {
+    margin-bottom: 60px;
+}
+
+.about-section-three .big-image {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.about-section-three .big-image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.about-section-three .title-column {
+    position: relative;
+}
+
+.about-section-three .title-column .inner-column {
+    position: relative;
+}
+
+.about-section-three .title-column .inner-column h2 {
+    position: relative;
+    color: #494b55;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2em;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.about-section-three .content-column {
+    position: relative;
+}
+
+.about-section-three .content-column .inner-column {
+    position: relative;
+}
+
+.about-section-three .content-column .inner-column .text {
+    position: relative;
+}
+
+.about-section-three .content-column .inner-column .text p {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-section-three .content-column .inner-column .big-text {
+    position: relative;
+    color: #494b55;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.about-section-three {
+    &--account {
+        padding: 0;
+    }
+
+    &--reg {
+        padding-bottom: 0;
+    }
+  
+}
+
+/*** 
+
+====================================================================
+	About Section Two
+====================================================================
+
+***/
+
+.about-section-two {
+    position: relative;
+    padding: 80px 0px 90px;
+}
+
+.about-section-two .info-column {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.about-section-two .info-column .inner-column {
+    position: relative;
+    padding-top: 78px;
+}
+
+.about-section-two .info-column .inner-column .title-box {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+.about-section-two .info-column .inner-column .title-box:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 55px;
+    height: 3px;
+    background-color: #bdaca8;
+}
+
+.about-section-two .info-column h2 {
+    position: relative;
+    font-weight: 600;
+    color: #494b55;
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+
+.about-section-two .info-column .designation {
+    position: relative;
+    color: #797979;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-section-two .info-column .info-box {
+    position: relative;
+    padding-left: 60px;
+}
+
+.about-section-two .info-column .info-box .phone-icon {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    width: 36px;
+    height: 36px;
+    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #bdaca8;
+}
+
+.about-section-two .info-column .info-box h3 {
+    position: relative;
+    color: #494b55;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+.about-section-two .info-column .info-box h4 {
+    position: relative;
+    color: #494b55;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.about-section-two .info-column .image-column {
+    position: relative;
+}
+
+/*** 
+
+====================================================================
+	About Section Three
+====================================================================
+
+***/
+
+.about-section-three {
+    position: relative;
+
+    .sec-title {
+        margin-bottom: 60px;
+    }
+
+    .big-image {
+        position: relative;
+        margin-bottom: 90px;
+
+        img {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .title-column {
+        position: relative;
+
+        .inner-column {
+            position: relative;
+
+            h2 {
+                position: relative;
+                color: #494b55;
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 1.2em;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+            
+        }
+    }
+
+    .content-column {
+        position: relative;
+    
+        .inner-column {
+            position: relative;
+    
+            .big-text {
+                position: relative;
+                color: #494b55;
+                font-size: 22px;
+                font-weight: 300;
+                line-height: 1.4em;
+                font-family: "Open Sans", sans-serif;
+            }
+    
+            
+            .text {
+                position: relative;
+    
+                p {
+                    position: relative;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    
+}
+

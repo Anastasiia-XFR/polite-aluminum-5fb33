@@ -1,0 +1,165 @@
+
+
+/*** 
+
+====================================================================
+	Project Section Two
+====================================================================
+
+***/
+
+.project-section-two {
+    position: relative;
+    padding: 95px 0px 70px;
+}
+
+.project-section-two .sortable-masonry {
+    position: relative;
+}
+
+.project-section-two .sec-title {
+    margin-bottom: 50px;
+}
+
+.project-section-two .sec-title .view-project {
+    position: relative;
+    color: #bdaca8;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bdaca8;
+}
+
+.project-section-two .filters {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.project-section-two .filters .filter-tabs {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.project-section-two .filters .filter-tabs .filter {
+    position: relative;
+    color: #303030;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: 600;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.project-section-two .filters .filter-tabs .filter:last-child {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.project-section-two .filters .filter-tabs .filter:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 14px;
+    width: 10px;
+    height: 1px;
+    background-color: #303030;
+}
+
+.project-section-two .filters .filter-tabs .filter.active,
+.project-section-two .filters .filter-tabs .filter:hover {
+    color: #d2b871;
+}
+
+.project-section-two .items-container {
+    position: relative;
+    margin-left: 200px;
+}
+
+/*Gallery Item*/
+
+.gallery-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gallery-item .inner-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image-box {
+    position: relative;
+    display: block;
+}
+
+.gallery-item .image-box img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.gallery-item .overlay-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 700ms ease;
+    transform: translate(0%, 100%);
+}
+
+.gallery-item .inner-box:hover .overlay-box {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.gallery-item .overlay-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+    padding: 10px 0px;
+}
+
+.gallery-item .overlay-inner .content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gallery-item .overlay-inner .link {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    display: inline-block;
+    background-color: #d2b871;
+    transition: all 300ms ease;
+}
+
+.gallery-item .overlay-inner .link .icon {
+    position: relative;
+}
+
+.gallery-item .overlay-inner .link:hover {
+    color: #666666;
+    background-color: rgba(255, 255, 255, 1);
+}

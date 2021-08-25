@@ -1,0 +1,112 @@
+version: 2.1
+
+references:
+  default_docker: &default_docker
+    - image: eu.gcr.io/tranzzo-dev/ci-cd/base:stable-scm
+      auth:
+        username: _json_key
+        password: $ACCT_AUTH_NB
+      environment:
+        PROJECT_NAME: tranzzo-prod
+        COMPUTE_ZONE: europe-west1-b
+
+commands:
+  deploy:
+    description: Deploy GAE
+    parameters:
+      version:
+        type: string
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /root/tmp
+      - run:
+          name: Restore build
+          command: tar --no-same-owner -xvf /root/tmp/build.tgz
+      - run:
+          name: Provision Google Cloud SDK
+          command: |
+            /root/setup_gcloud.sh "${ACCT_AUTH_GAE}"
+      - run:
+          name: Deploy << parameters.version >> version
+          command: |
+            gcloud app deploy --version << parameters.version >> --no-promote app.yaml
+      - run:
+          name: Notify Chats
+          command: |
+            case << parameters.version >> in
+                prod)
+                    /root/notify-chats.sh << parameters.version >> https://beforis.com/ "releases"
+                    ;;
+                *)
+                    /root/notify-chats.sh << parameters.version >> https://<< parameters.version >>-dot-beforis-dot-$PROJECT_NAME.ey.r.appspot.com
+                    ;;
+            esac
+
+workflows:
+  version: 2.1
+  build_and_deploy:
+    jobs:
+      - build:
+          context: org-global
+          filters:
+            branches:
+              only:
+                - dev
+                - master
+                - feature/SDC-3751
+                - hugo-forestry-2
+
+      - deploy-test:
+          context: org-global
+          filters:
+            branches:
+              only:
+                - dev
+                - master
+                - hugo-forestry-2
+          requires:
+            - build
+
+      - approve-prod:
+          type: approval
+          requires:
+            - deploy-test
+          filters:
+            branches:
+              only:
+                - master
+      - deploy-prod:
+          context: org-global
+          requires:
+            - approve-prod
+
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: hugo --gc --minify
+
+      - run:
+          name: Archive build
+          command: tar -cvf build.tgz public
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build.tgz
+
+  deploy-test:
+    docker: *default_docker
+    steps:
+      - deploy:
+          version: test
+
+  deploy-prod:
+    docker: *default_docker
+    steps:
+      - deploy:
+          version: prod

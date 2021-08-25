@@ -1,0 +1,82 @@
+
+/*Post Widget*/
+.sidebar {
+    .popular-posts {
+        .post {
+            position: relative;
+          
+            padding: 0px 0px;
+            padding-bottom: 15px;
+            margin-bottom: 22px;
+           
+            font-size: 14px;
+           
+            border-bottom: 1px solid $grey30;
+            color: $grey19;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .text {
+                position: relative;
+                top: -4px;
+
+                margin: 0px 0px 0px;
+                
+                @include font(15, 15*1.4, 600, $ffText);
+                text-transform: capitalize;
+                color: $grey4;
+                
+            
+               a {
+                    color: $grey4;
+                    transition: all 0.3s ease;
+                  
+                }
+            }
+
+            a {
+                &:hover {
+                    color: $grey5;
+                }
+            }
+
+            &-info {
+                color: $grey31;
+                @include font(15, 15, 700, $ffText);
+            }
+        }
+    }
+
+    .popular-tags a {
+        position: relative;
+        display: inline-block;
+        
+        padding: 6px 20px 6px;
+        margin: 0px 6px 10px 0px;
+        
+        @include font(15, 24, 400);
+        text-align: center;
+        text-transform: capitalize;
+
+        background: none;
+        border: 1px solid $grey33;
+        color: $grey32;
+
+        transition: all 300ms ease;
+    
+        &:hover {
+            border-color: $grey;
+            background-color: $grey;
+            color: $white;
+        }
+       
+    }
+
+    }
+
+
+
+/*Popular Tags*/
+

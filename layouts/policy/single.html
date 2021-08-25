@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- partial "header.html" . -}}
+
+
+    <section class="main-slider main-slider-two" style="height: auto">
+        <div class="auto-container">
+            <div class="row">
+                <div class="content animated fadeInUp">
+            
+    
+                    <h2>
+                        {{ .Title | markdownify | truncate 150 }}
+                    </h2>
+    
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<article class="page-main"> 
+	<section class="page-container">
+		<div class="page-content">
+			
+			<div>
+				{{  .Content | markdownify }}
+			</div>
+		
+		</div>
+	</section>
+
+
+</article>
+{{- partial "_contacts.html" . -}}
+{{- partial "footer.html" . -}}
+
+{{ end }}

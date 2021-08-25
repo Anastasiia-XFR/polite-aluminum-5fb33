@@ -1,0 +1,105 @@
+
+/*** 
+
+====================================================================
+	Studio Section Two
+====================================================================
+
+***/
+
+.studio-section-two {
+    position: relative;
+    padding: 100px 0px 60px;
+}
+
+.studio-section-two .title-column {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.studio-section-two .title-column .inner-column {
+    position: relative;
+    padding-right: 40px;
+}
+
+.studio-section-two .title-column .inner-column .sec-title {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.studio-section-two .title-column .big-text {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    color: #494b55;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+}
+
+.studio-section-two .title-column .text {
+    position: relative;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 38px;
+}
+
+.studio-section-two .title-column .theme-btn {
+    padding: 13px 45px;
+}
+
+.studio-section-two .blocks-column {
+    position: relative;
+}
+
+.studio-section-two .blocks-column .inner-column {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 15px;
+}
+
+/*Studio Block*/
+
+.studio-block {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.studio-block .inner {
+    position: relative;
+}
+
+.studio-block .inner .icon-box {
+    position: relative;
+    color: #bdaca8;
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+.studio-block .inner h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+.studio-block .inner h3 a {
+    position: relative;
+    color: #494b55;
+    transition: all 0.3s ease;
+}
+
+.studio-block .inner h3 a:hover {
+    color: #bdaca8;
+}
+
+.studio-block .inner .designation {
+    position: relative;
+    font-size: 16px;
+    color: #494b55;
+    font-style: italic;
+    font-family: "Lora", serif;
+}

@@ -1,0 +1,37 @@
+.feature-block {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.feature-block .inner-box {
+    position: relative;
+    padding-left: 90px;
+}
+
+.feature-block .inner-box .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #bdaca8;
+    font-size: 56px;
+    line-height: 1em;
+    margin-bottom: 25px;
+}
+
+.feature-block .inner-box h3 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+}
+
+.feature-block .inner-box h3 a {
+    color: $grey4;
+}
+
+.feature-block .inner-box .text {
+    position: relative;
+    color: #797979;
+    line-height: 1.6em;
+}

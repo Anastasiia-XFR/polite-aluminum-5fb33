@@ -1,0 +1,145 @@
+
+/*** 
+
+====================================================================
+	Team Section Two
+====================================================================
+
+***/
+
+.team-section-two {
+    position: relative;
+    padding: 0px 0px 0px;
+    margin-bottom: 60px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.team-section-two.style-two {
+    margin-bottom: 0px;
+}
+
+.team-section-two .title-column {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.team-section-two .title-column .inner-column {
+    position: relative;
+    padding-right: 80px;
+    padding-bottom: 25px;
+}
+
+.team-section-two .title-column .inner-column:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 90px;
+    height: 3px;
+    background-color: #bdaca8;
+}
+
+.team-section-two .title-column h2 {
+    position: relative;
+    color: #494b55;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+}
+
+.team-section-two .title-column .text {
+    position: relative;
+    color: #797979;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.team-block-two {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-block-two .inner-box {
+    position: relative;
+}
+
+.team-block-two .inner-box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-block-two .inner-box .overlay-box {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(47, 47, 47, 0.8);
+    opacity: 0;
+    transform: translate(0, -30px);
+    transition: all 0.3s ease;
+    
+}
+
+.team-block-two .inner-box:hover .overlay-box {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+.team-block-two .inner-box .overlay-box .social-links {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    width: 100%;
+}
+
+.team-block-two .inner-box .overlay-box .social-links li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 12px;
+    line-height: 24px;
+}
+
+.team-block-two .inner-box .overlay-box .social-links li a {
+    position: relative;
+    color: #bdaca8;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.team-block-two .inner-box .overlay-box .social-links li a:hover {
+    color: #ffffff;
+}
+
+.team-block-two .inner-box .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.team-block-two .inner-box .lower-box {
+    position: relative;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.team-block-two .inner-box .lower-box h3 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.team-block-two .inner-box .lower-box h3 a {
+    position: relative;
+    color: #494b55;
+}
+
+.team-block-two .inner-box .lower-box .designation {
+    position: relative;
+    color: #797979;
+    font-size: 15px;
+}

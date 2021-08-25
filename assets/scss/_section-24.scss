@@ -1,0 +1,58 @@
+
+
+/*** 
+
+====================================================================
+	Education Section
+====================================================================
+
+***/
+
+.education-section {
+    position: relative;
+    padding: 90px 0px 60px;
+    background-color: #f5f5f5;
+}
+
+.education-section .sec-title-two {
+    margin-bottom: 45px;
+}
+
+.year-block {
+    position: relative;
+    margin-bottom: 30px;
+
+    .inner {
+        position: relative;
+        padding-left: 115px;
+
+        .year {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            color: #bdaca8;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h2 {
+            position: relative;
+            color: #494b55;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2em;
+            margin-bottom: 12px;
+        }
+
+        .text {
+            position: relative;
+            color: #797979;
+            font-size: 15px;
+            line-height: 1.8em;
+        }
+        
+        
+    }
+}
+

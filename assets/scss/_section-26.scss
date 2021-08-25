@@ -1,0 +1,57 @@
+
+/*** 
+
+====================================================================
+	Services Section
+====================================================================
+
+***/
+
+.services-section {
+    position: relative;
+    padding-bottom: 60px;
+
+    .inner-container {
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    .image-column {
+        position: relative;
+        margin-bottom: 40px;
+
+        .image {
+            position: relative;
+
+            img {
+                position: relative;
+                width: 100%;
+                display: block;
+            }
+            
+        }
+        
+    }
+
+    .content-column {
+        position: relative;
+
+        .inner-column {
+            position: relative;
+            padding-left: 30px;
+
+            .text {
+                position: relative;
+                color: #797979;
+                font-size: 16px;
+                line-height: 1.7em;
+                margin-bottom: 35px;
+            }
+            
+        }
+    }
+    
+    
+}
+

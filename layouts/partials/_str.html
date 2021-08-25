@@ -1,0 +1,31 @@
+<section
+  class="steps-section section-str"
+  style="padding-top: {{ if .Scratch.Get .pdt }} {{  .Scratch.Get .pdt }} {{ else  }} 0 {{ end }};"
+>
+  <div class="auto-container">
+    <div class="sec-title">
+      <h3>
+        {{ .title | truncate 200 }}
+      </h3>
+    </div>
+
+    {{ if .title_sub }}
+    <div class="text subtext">
+      {{ .title_sub | truncate 300 }}
+    </div>
+    {{ end }}
+
+    <div class="row clearfix steps-row">
+      {{ range .list }}
+      <div class="step-item col-md-3 col-sm-6 col-xs-12">
+        <div class="step-count">{{ .num | truncate 50 }}</div>
+        <img src="{{ .icon | relURL }}" alt="{{ .heading | truncate 100 }}" />
+        <div class="text">
+          <p>{{ .heading | upper | truncate 100 }}</p>
+          {{ .description | truncate 500 }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

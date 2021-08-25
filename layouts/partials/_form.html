@@ -1,0 +1,30 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!--Form Column-->
+<div class="inner-column">
+	<!-- Default Form -->
+	<div class="default-form">
+		<!--Default Form-->
+		<form action="{{ .Site.Params.form.action | relURL }}" method="{{ .Site.Params.form.method }}">
+			{{ range .Site.Params.form.field }}
+			<div class="form-group">
+				{{ if eq .type "submit" }}
+				<div class="form-group">
+					<button class="theme-btn btn-style-five" name="{{ .name }}" type="{{ .type }}">
+						{{ .placeholder }}
+					</button>
+				</div>
+				{{ else }}
+				<input name="{{ .name }}" placeholder="{{ .placeholder }}" required="{{ .required }}"
+					type="{{ .type }}" />
+				{{ end }}
+
+			</div>
+			{{ end }}
+
+			<!-- <div class="form-group"><textarea name="sub" placeholder="По какому вопросу нужна помощь?"></textarea></div> -->
+
+		</form>
+	</div>
+</div>
+<!--End Default Form -->

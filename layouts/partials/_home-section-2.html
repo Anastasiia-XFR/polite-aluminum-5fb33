@@ -1,0 +1,43 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.section_2 }}
+	{{ with $data.homepage.section_2 }}
+
+ <!--About Section Three-->
+ <a name="services"></a>
+ <section class="about-section-three">
+	 <div class="auto-container">
+
+		{{ if .title }}
+		 <div class="sec-title mb-0" style="margin-bottom: 0;">
+			 <h3> 
+				 {{ .title | markdownify | truncate 100 }}
+			</h3>
+		 </div>
+		{{ end }}
+
+		{{ if .title_sub }}
+		 <div class="fee-subtitle"> 
+			 {{ .title_sub | markdownify | truncate 150 }} 
+		 </div>
+		{{ end }}
+
+		{{ if .lists }}
+		 <div class="text">
+
+			 <ul class="checks list-double">
+				{{ range .lists }}
+				<li>
+					{{ .item | markdownify | truncate 100 }}
+				</li>
+				{{ end }}
+			 </ul>
+
+		 </div>
+		{{ end }}
+	 </div>
+ </section>
+ <!--End About Section Three-->
+
+	{{ end }}
+{{ end }}

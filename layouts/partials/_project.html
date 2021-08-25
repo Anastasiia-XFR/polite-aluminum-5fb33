@@ -1,0 +1,49 @@
+<section class="project-section">
+    <div class="auto-container">
+
+        {{ if .title }}
+        <div class="sec-title ">
+            <h3> 
+                {{ .title | markdownify | truncate 100 }}
+            </h3>
+            {{ if .title_sub }}
+            <p class="fee-subtitle">
+                {{ .title_sub | truncate 200 }}
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="row clearfix">
+
+            {{ range .items }}
+            <!--Architecture Block-->
+            <div class="architecture-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="">
+                        <img src="{{ .icon | relURL }}" alt="{{ .title | truncate 100 }}">
+                    </div>
+                    <div class="lower-box">
+                        <h3>{{ .title | markdownify | truncate 100 }}</h3>
+                        <div class="text">
+                            {{ .description | truncate 200 | markdownify }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+
+        {{ if .btn }}
+        <div class="btn-ct">
+            <a href="{{ .btn.url }}" class="btn-style-five">
+                <span>
+                {{ .btn.label }}
+            </span>
+            </a>
+        </div>
+        {{ end }}
+
+    </div>
+</section>

@@ -1,0 +1,139 @@
+
+.shop-form {
+    position: relative;
+}
+
+.shop-form .sec-title-two {
+    margin-bottom: 40px;
+}
+
+.shop-form .sec-title-two h2 {
+    font-size: 32px;
+}
+
+.shop-form .billing-inner {
+    position: relative;
+    padding-right: 100px;
+}
+
+.shop-form .sec-title {
+    margin-bottom: 30px;
+}
+
+.shop-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.billing-details .shop-form .form-group {
+    margin-bottom: 20px;
+}
+
+.shop-form .form-group .field-label {
+    display: block;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.shop-form .form-group .field-label sup {
+    position: relative;
+    top: 0px;
+    color: #797979;
+    font-size: 16px;
+}
+
+.shop-form input[type="text"],
+.shop-form input[type="email"],
+.shop-form input[type="password"],
+.shop-form input[type="tel"],
+.shop-form input[type="number"],
+.shop-form input[type="url"],
+.shop-form select,
+.shop-form textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $white;
+    line-height: 16px;
+    padding: 10px 15px;
+    height: 38px;
+    border: 1px solid #eeeeee;
+    transition: all 300ms ease;
+    
+}
+
+.shop-form input.address-two {
+    margin-top: 12px;
+}
+
+.shop-form input::-webkit-input-placeholder,
+.shop-form select::-webkit-input-placeholder,
+.shop-form textarea-webkit-input-placeholder {
+    color: #c6c6c6;
+}
+
+.shop-form select {
+
+    background: $white url(../../images/icons/icon-select.png) right center no-repeat;
+    cursor: pointer;
+}
+
+.shop-form select option {
+    text-indent: 15px;
+}
+
+.shop-form textarea {
+    resize: none;
+    height: 100px !important;
+    overflow: hidden;
+}
+
+.shop-form input:focus,
+.shop-form select:focus,
+.shop-form textarea:focus {
+    border-color: #d2b871;
+}
+
+/*Shop Order Box*/
+
+.shop-order-box {
+    position: relative;
+    padding: 20px 28px 60px;
+    border: 1px solid #d9d9d9;
+    background-color: #fdfdfd;
+}
+
+.shop-order-box .order-list {
+    position: relative;
+}
+
+.shop-order-box .order-list li {
+    position: relative;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.shop-order-box .order-list li span {
+    float: right;
+    width: 35%;
+    text-align: left;
+    font-size: 17px;
+}
+
+.shop-order-box .order-list li span.dark {
+    color: #494b55;
+}
+
+.shop-order-box .order-list li.total {
+    padding: 8px 0px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}

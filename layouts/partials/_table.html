@@ -1,0 +1,50 @@
+<section class="table-section" id="packages" style="padding-top: 0">
+    <div class="auto-container">
+        <div class="sec-title">
+            <h3>
+                {{ .title | truncate 100 }}
+            </h3>
+            
+        </div>
+
+        <div class="inner-content">
+            <div class="row clearfix">
+
+                {{ range .cols }}
+
+                <div {{ if .type }} class="col-md-5 col-sm-6 col-md-offset-1" {{ else }} class="col-md-6 col-sm-6" {{ end }}>
+                    {{ if .type }}
+                    <div class="list-bg">
+                        {{ end }}
+                        <p class="subtitle">
+                            <b>
+                                {{ .title | truncate 100 }}
+                            </b>
+                        </p>
+
+                        <ul {{ if .type }} class="checks checks--hollow" {{ else }} class="checks" {{ end }}>
+                            {{ range .items }}
+                            <li>
+                                {{ .item }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ if .type }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+            </div>
+        </div>
+
+        {{ if .btn }}
+        <div class="btn-ct">
+            <a href="{{ .btn.link }}" class="btn-style-five"><span>
+                    {{ .btn.label }}
+                </span></a>
+        </div>
+        {{ end }}
+
+    </div>
+</section>

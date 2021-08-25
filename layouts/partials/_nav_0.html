@@ -1,0 +1,90 @@
+  <!-- Main Menu -->
+  <nav class="main-menu">
+    <div class="navbar-header">
+      <!-- Toggle Button -->
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse clearfix">
+      <ul class="navigation clearfix">
+        <!-- <li><a href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li> -->
+
+        {{ range .Site.Menus.main }} {{ if .HasChildren }}
+        <li class="dropdown">
+          <a
+            href="{{ .URL }}"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ .Name }}
+          </a>
+          <!-- <ul>
+            {{ range .Children }} {{ if .HasChildren }}
+            <li class="dropdown">
+              <a
+                href="{{ .URL | relLangURL }}"
+                role="button"
+                data-toggle="dropdown-inner"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ .Name }}
+              </a>
+              <!-- <ul class="dropdown-inner">
+                {{ range .Children }}
+                <li>
+                  <a href="{{ .URL | relLangURL }}">
+        {{ if .Params.pre }}
+        <img src="{{ .Params.pre }}" alt="{{ .Name }}" width="33" height="20">
+        {{ end }}
+        {{ .Name }}
+      </a>
+                </li>
+                {{ end }}
+              </ul> -->
+            </li>
+            {{ else }}
+            <li>
+              <a href="{{ .URL | relLangURL }}"> {{ .Name }} </a>
+            </li>
+            {{ end }} {{ end }}
+          </ul> -->
+        </li>
+        {{ else }}
+        <li>
+          <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }} {{ end }} {{- partial "_lang.html" . -}}
+
+        <li>
+          <a class="menu-tg" href="https://t.me/Beforis" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M22.4416 3.42856L1.71429 10.8312L7.63637 13.7922L15.3507 9.42856L10.5974 15.2727L19.4805 21.1948L22.4416 3.42856Z"
+                stroke="#4A4B56"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main Menu End-->

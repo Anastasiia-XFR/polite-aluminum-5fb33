@@ -1,0 +1,15 @@
+service: beforis
+
+runtime: php74
+
+handlers:
+  - url: /
+    static_files: public/index.html
+    upload: /*
+
+  - url: /(.*)/
+    static_files: public/\1/index.html
+    upload: public/*
+
+  - url: /
+    static_dir: public/

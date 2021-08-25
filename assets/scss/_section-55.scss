@@ -1,0 +1,50 @@
+
+.main-image-box {
+    position: relative;
+
+    .image-column {
+        position: relative;
+        margin-bottom: 30px;
+
+        .image {
+            position: relative;
+
+            img {
+                position: relative;
+                width: 100%;
+                display: block;
+            }
+        }
+        
+    }
+
+    .content-column {
+        position: relative;
+
+        .inner-column {
+            position: relative;
+            padding: 150px 70px 140px;
+            background-color: $grey4;
+
+            ul {
+                position: relative;
+
+                li {
+                    position: relative;
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-bottom: 24px;
+                    font-family: "Montserrat", sans-serif;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+

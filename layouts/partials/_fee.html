@@ -1,0 +1,48 @@
+<section class="fee-section fee-section--reg fee-section--merchant">
+  <div class="row">
+    <!--Image Column-->
+    <div class="col-img col-md-6 col-sm-12 col-xs-12">
+      <div class="image img-fee">
+        <img
+          class="img-default"
+          src="{{ .img | relURL }}"
+          alt="{{ .title | truncate 100 }}"
+        />
+        <img
+          class="img-mob-2"
+          src="{{ .img | relURL }}"
+          alt="{{ .title | truncate 100 }}"
+        />
+      </div>
+    </div>
+
+    <!--Content Column-->
+    <div class="content-column col-md-6 col-sm-12 col-xs-12" style="align-self: center;">
+      <div class="inner-column">
+        <div class="sec-title ">
+          <h3>
+            {{ .title | truncate 100 }}
+          </h3>
+
+          {{ if .title_sub }}
+          <p class="fee-subtitle">
+            {{ .title_sub | truncate 200 }}
+          </p>
+          {{ end }}
+        </div>
+        <ul class="checks checks--big">
+          {{ range .lists }}
+          <li>
+            {{ if .title }}
+            <h3>{{ .title }}</h3>
+            {{ end }}
+            <p>
+              {{ .item }}
+            </p>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

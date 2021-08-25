@@ -1,0 +1,88 @@
+/*** 
+
+====================================================================
+	Default Form
+====================================================================
+
+ ***/
+
+.default-form {
+    position: relative;
+
+    .form-group {
+        position: relative;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        textarea::-webkit-input-placeholder,
+        input::-webkit-input-placeholder {
+            color: $grey4;
+        }
+
+        textarea {
+            position: relative;
+            display: block;
+            
+            @include sz(100%, 125px);
+            padding: 10px 0px;
+            
+            @include font(15, 24, 400);
+          
+
+            resize: none;
+            
+            background: none;
+            border-bottom: 1px solid $grey4;
+            color: $grey10;
+            
+            transition: all 300ms ease;
+        }
+
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            position: relative;
+            display: block;
+            padding: 10px 0px;
+            
+            @include sz(100%, 60px);
+           
+            @include font(16, 18, 400);
+           
+            color: $grey4;
+            background: none;
+            border-bottom: 1px solid $grey4;
+           
+            transition: all 300ms ease;
+        }
+
+    }
+
+
+    button {
+        margin-top: 50px;
+    }
+
+    &.style-two .form-group {
+
+        textarea, input {
+            color: $white;
+            border-color: $white;
+            
+            &::-webkit-input-placeholder {
+                color: $white;
+                font-weight: 600;
+            }
+        }
+  
+    }
+
+   
+
+}

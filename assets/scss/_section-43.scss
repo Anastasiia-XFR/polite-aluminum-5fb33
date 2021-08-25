@@ -1,0 +1,31 @@
+/*Check Out Page*/
+
+.checkout-page {
+    position: relative;
+    padding: 100px 0px 80px;
+
+    .default-links {
+        position: relative;
+        margin-bottom: 40px;
+
+        li {
+            margin-bottom: 15px;
+            line-height: 24px;
+            padding: 18px 28px;
+            background: #f9f9f9;
+            color: #797979;
+            font-size: 17px;
+            font-weight: 600;
+            border: 1px solid #ebebeb;
+            font-family: "Montserrat", sans-serif;
+
+            a {
+                color: #d2b871;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+
+

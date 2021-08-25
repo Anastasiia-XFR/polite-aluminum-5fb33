@@ -1,0 +1,88 @@
+
+
+/*** 
+
+====================================================================
+	Architecture Section
+====================================================================
+
+***/
+
+.architecture-section {
+    position: relative;
+    padding: 100px 0px 60px;
+
+    .sec-title, .sec-title-two {
+        margin-bottom: 50px;
+    }
+}
+
+.architecture-block {
+    position: relative;
+    padding: 0 40px;
+
+    .text {
+
+        @include font(14, 14*1.6, 400, $ffText);
+        text-align: center;
+    }
+
+    .inner-box {
+        position: relative;
+
+        .lower-box {
+            position: relative;
+            padding-top: 24px;
+
+            h3 {
+                margin: 10px 0;
+                position: relative;
+
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.4;
+                text-align: center;
+                text-transform: uppercase;
+
+                color: #4d4f5b;
+
+                a {
+                    position: relative;
+                    color: #222222;
+                    transition: all 0.3s ease;
+                    
+                    &:hover {
+                        color: #bdaca8;
+                    }
+                    
+                }
+                
+            }
+        }
+
+        &:hover .image img {
+            opacity: 0.5;
+         
+            transform: scale(1.05, 1.05);
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            display: block;
+            transition: all 0.5s ease;
+         
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .image {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background: #000000;
+    }
+    
+}

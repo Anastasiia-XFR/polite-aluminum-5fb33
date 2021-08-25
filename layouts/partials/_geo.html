@@ -1,0 +1,13 @@
+<ul class="checks list-location">
+  {{ range .Data.Pages }} 
+  {{ if not .Params.draft }}
+  {{ if .Params.country_title}}
+  <li>
+    <a href="{{ .Permalink | relURL }}">
+      {{ .Params.country_title | truncate 50 }}
+    </a>
+  </li>
+  {{ end }} 
+  {{ end }} 
+  {{ end }}
+</ul>

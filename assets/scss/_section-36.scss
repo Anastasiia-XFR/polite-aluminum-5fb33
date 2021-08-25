@@ -1,0 +1,153 @@
+
+/*** 
+
+====================================================================
+	Comments Area
+====================================================================
+
+ ***/
+
+ .sidebar-page-container .comments-area {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.sidebar-page-container .group-title {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.sidebar-page-container .group-title h2 {
+    position: relative;
+    font-size: 22px;
+    color: #494b55;
+    font-weight: 700;
+    padding-bottom: 0px;
+}
+
+.sidebar-page-container .comments-area .inner-box {
+    position: relative;
+    border: 1px solid #eeeeee;
+}
+
+.sidebar-page-container .comments-area .comment-box {
+    position: relative;
+    padding: 25px 25px 25px;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border-bottom: 1px solid #ebe8e8;
+}
+
+.sidebar-page-container .comments-area .comment-box:nth-child(2n + 0) {
+    background-color: #fcfcfc;
+}
+
+.sidebar-page-container .comments-area .comment-box:last-child {
+    border-bottom: 0px;
+}
+
+.sidebar-page-container .comments-area .comment {
+    position: relative;
+    font-size: 14px;
+    min-height: 98px;
+    padding: 0px 0px 0px 100px;
+}
+
+.sidebar-page-container .comments-area .comment.reply-comment {
+    margin-left: 100px;
+    margin-top: 45px;
+}
+
+.sidebar-page-container .comments-area .comment .comment-inner {
+    position: relative;
+}
+
+.sidebar-page-container .comments-area .comment .comment-reply {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #9cc900;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    text-transform: capitalize;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.sidebar-page-container .comments-area .comment .comment-reply span {
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.sidebar-page-container .comments-area .comment-box .author-thumb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 73px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.sidebar-page-container .comments-area .comment-box .author-thumb img {
+    width: 75px;
+    display: block;
+}
+
+.sidebar-page-container .comments-area .comment-info {
+    color: #3e5773;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.sidebar-page-container .comments-area .comment-box strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 16px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar-page-container .comments-area .comment-box .text {
+    color: #898989;
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+}
+
+.sidebar-page-container .comments-area .comment-time {
+    position: relative;
+    font-size: 13px;
+    color: #f47a3c;
+}
+
+.sidebar-page-container .comments-area .comment-box .theme-btn {
+    padding: 6px 27px;
+}
+
+.sidebar-page-container .comments-area .comment-box .post-info {
+    position: relative;
+}
+
+.sidebar-page-container .comments-area .comment-box .post-info li {
+    position: relative;
+    padding-right: 10px;
+    line-height: 1em;
+    margin-right: 10px;
+    color: #aeaeae;
+    border-right: 1px solid #aeaeae;
+    display: inline-block;
+}
+
+.sidebar-page-container .comments-area .comment-box .post-info li:last-child {
+    border: 0px;
+}

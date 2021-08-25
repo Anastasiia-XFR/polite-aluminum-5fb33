@@ -1,0 +1,675 @@
+baseURL = "https://beforis-promo.netlify.app"
+#baseURL = "https://test-dot-beforis-dot-tranzzo-prod.ey.r.appspot.com/"
+disableLanguages = []
+paginate = "6"
+summaryLength = "50"
+title = "Beforis"
+[Languages.en]
+contentDir = "content/en"
+languageCode = "en-us"
+languageName = "En"
+[[Languages.en.footer.col]]
+links = [["hi@beforis.com", "mailto:hi@beforis.com"]]
+title = "Contacts"
+[[Languages.en.footer.col]]
+links = [["Main", "/"], ["Services", "/#services"]]
+title = "Information"
+[[Languages.en.footer.col]]
+content = "&copy; 2021 Beforis. All rights reserved. [Privacy Policy](/privacy/)"
+title = "Copyright"
+[[Languages.en.menu.main]]
+URL = "/"
+name = "MAIN"
+weight = 1
+[[Languages.en.menu.main]]
+URL = "#services/"
+hasChildren = true
+identifier = "services"
+name = "SERVICES"
+weight = 2
+[[Languages.en.menu.main]]
+hasChildren = true
+identifier = "main-services"
+name = "Main services"
+parent = "services"
+weight = 21
+[[Languages.en.menu.main]]
+URL = "/registration/"
+hasChildren = true
+identifier = "registration"
+name = "Registration of companies abroad"
+parent = "main-services"
+weight = 211
+[[Languages.en.menu.main]]
+URL = "/registration/gb/"
+identifier = "2111"
+name = "United Kingdom"
+parent = "registration"
+weight = 2111
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/hk/"
+identifier = "2112"
+name = "Hong Kong"
+parent = "registration"
+weight = 2112
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/cy/"
+identifier = "2113"
+name = "Cyprus"
+parent = "registration"
+weight = 2113
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/ae/"
+identifier = "2114"
+name = "United Arab Emirates"
+parent = "registration"
+weight = 2114
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/pl/"
+identifier = "2115"
+name = "Poland"
+parent = "registration"
+weight = 2115
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/ch/"
+identifier = "2116"
+name = "Czech Republic"
+parent = "registration"
+weight = 2116
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/ee/"
+identifier = "2117"
+name = "Estonia"
+parent = "registration"
+weight = 2117
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/registration/#geo"
+identifier = "2118"
+name = "All countries"
+parent = "registration"
+weight = 2118
+[[Languages.en.menu.main]]
+URL = "/account/"
+hasChildren = true
+identifier = "account"
+name = "Opening of a business account abroad"
+parent = "main-services"
+weight = 212
+[[Languages.en.menu.main]]
+URL = "/account/at/"
+identifier = "2121"
+name = "Austria"
+parent = "account"
+weight = 2121
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/gb/"
+identifier = "2122"
+name = "United Kingdom"
+parent = "account"
+weight = 2122
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/de/"
+identifier = "2123"
+name = "Germany"
+parent = "account"
+weight = 2123
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/cy/"
+identifier = "2124"
+name = "Cyprus"
+parent = "account"
+weight = 2124
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/lv/"
+identifier = "2125"
+name = "Latvia"
+parent = "account"
+weight = 2125
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/pl/"
+identifier = "2126"
+name = "Poland"
+parent = "account"
+weight = 2126
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/ch/"
+identifier = "2127"
+name = "Switzerland"
+parent = "account"
+weight = 2127
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/account/#geo"
+identifier = "2128"
+name = "All countries"
+parent = "account"
+weight = 2128
+[[Languages.en.menu.main]]
+URL = "/license/"
+hasChildren = "true"
+identifier = "license"
+name = "Obtaining license"
+parent = "main-services"
+weight = 213
+[[Languages.en.menu.main]]
+URL = "/license/vu/"
+name = "Vanuatu"
+parent = "license"
+weight = 2131
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/gb/"
+name = "United Kingdom"
+parent = "license"
+weight = 2132
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/cy/"
+name = "Cyprus"
+parent = "license"
+weight = 2133
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/cr/"
+name = "Costa Rica"
+parent = "license"
+weight = 2134
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/cw/"
+name = "Curaçao"
+parent = "license"
+weight = 2135
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/mt/"
+name = "Malta"
+parent = "license"
+weight = 2136
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/ee/"
+name = "Estonia"
+parent = "license"
+weight = 2137
+[Languages.en.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.en.menu.main]]
+URL = "/license/#geo"
+name = "All countries"
+parent = "license"
+weight = 2138
+[[Languages.en.menu.main]]
+hasChildren = true
+identifier = "secondary-services"
+name = "Addition Services"
+parent = "services"
+weight = 22
+[[Languages.en.menu.main]]
+URL = "/taxation/"
+name = "International tax planning and structuring"
+parent = "secondary-services"
+weight = 221
+[[Languages.en.menu.main]]
+URL = "/merchant/"
+name = "Opening a merchant account"
+parent = "secondary-services"
+weight = 222
+[[Languages.en.menu.main]]
+URL = "/maintenance/"
+name = "Financial transactions support"
+parent = "secondary-services"
+weight = 223
+[[Languages.en.menu.main]]
+URL = "/certification/"
+name = "PCI DSS Certification"
+parent = "secondary-services"
+weight = 224
+[[Languages.en.menu.main]]
+URL = "#contact"
+name = "CONTACTS"
+weight = 3
+[Languages.en.params.form]
+action = "/php/sendemail-en.php"
+enable = "true"
+method = "POST"
+title = "Get a free consultation"
+title_sub = "Fill in the application form, and the Beforis manager will contact you to discuss the details."
+[[Languages.en.params.form.field]]
+name = "name"
+placeholder = "Name"
+required = "true"
+type = "text"
+[[Languages.en.params.form.field]]
+name = "tel"
+placeholder = "Phone"
+required = "true"
+type = "tel"
+[[Languages.en.params.form.field]]
+name = "email"
+placeholder = "Email"
+required = "true"
+type = "email"
+[[Languages.en.params.form.field]]
+name = "btn_submit"
+placeholder = "Send"
+required = "true"
+type = "submit"
+[Languages.en.params.partners]
+enable = "true"
+title = "Our partners"
+[[Languages.en.params.contacts]]
+description = "Beforis Limited \n\n\nRegistration Number: 2972879 \n\n\nCompany Address: Rm 7B, One Capital Place, \n\n\n18 Luard Road, Wan Chai, Hong Kong\n"
+icon = "icon-loc"
+title = "ADDRESS"
+[[Languages.en.params.contacts]]
+email = "hi@beforis.com"
+icon = "icon-mail"
+title = "EMAIL"
+[Languages.ru]
+contentDir = "content/ru"
+home = "Главная"
+languageCode = "ru"
+languageName = "Ru"
+weight = 1
+[[Languages.ru.footer.col]]
+links = [["hi@beforis.com", "mailto:hi@beforis.com"]]
+title = "Контакты"
+[[Languages.ru.footer.col]]
+links = [["Главная", "/"], ["Услуги", "/#services"]]
+title = "Информация"
+[[Languages.ru.footer.col]]
+content = "&copy; 2021 Beforis. Все права защищены. [Политика конфиденциальности](/privacy/)"
+title = "Политика"
+[[Languages.ru.menu.main]]
+URL = "/"
+name = "ГЛАВНАЯ"
+weight = 1
+[[Languages.ru.menu.main]]
+URL = "#services/"
+hasChildren = true
+identifier = "services"
+name = "УСЛУГИ"
+weight = 2
+[[Languages.ru.menu.main]]
+hasChildren = true
+identifier = "main-services"
+name = "Основные услуги"
+parent = "services"
+weight = 21
+[[Languages.ru.menu.main]]
+URL = "/registration/"
+hasChildren = true
+identifier = "registration"
+name = "Регистрация компаний"
+parent = "main-services"
+weight = 211
+[[Languages.ru.menu.main]]
+URL = "/registration/#geo"
+identifier = "registration-all"
+name = "Все страны"
+parent = "registration"
+weight = 2111
+[[Languages.ru.menu.main]]
+URL = "/registration/gb/"
+name = "Великобритания"
+parent = "registration"
+weight = 21111
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/hk/"
+name = "Гонконг"
+parent = "registration"
+weight = 21112
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/cy/"
+name = "Кипр"
+parent = "registration"
+weight = 21113
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/ae/"
+name = "ОАЭ"
+parent = "registration"
+weight = 21114
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/pl/"
+name = "Польша"
+parent = "registration"
+weight = 21115
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/ch/"
+name = "Чехия"
+parent = "registration"
+weight = 21116
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/registration/ee/"
+name = "Эстония"
+parent = "registration"
+weight = 21117
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/"
+hasChildren = true
+identifier = "account"
+name = "Открытие бизнес-счета"
+parent = "main-services"
+weight = 212
+[[Languages.ru.menu.main]]
+URL = "/account/at/"
+identifier = "2121"
+name = "Австрия"
+parent = "account"
+weight = 2121
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/gb/"
+identifier = "2122"
+name = "Великобритания"
+parent = "account"
+weight = 2122
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/de/"
+identifier = "2123"
+name = "Германия"
+parent = "account"
+weight = 2123
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/cy/"
+identifier = "2124"
+name = "Кипр"
+parent = "account"
+weight = 2124
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/lv/"
+identifier = "2125"
+name = "Латвия"
+parent = "account"
+weight = 2125
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/pl/"
+identifier = "2126"
+name = "Польша"
+parent = "account"
+weight = 2126
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/ch/"
+identifier = "2127"
+name = "Швейцария"
+parent = "account"
+weight = 2127
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/account/#geo"
+identifier = "2128"
+name = "Все страны"
+parent = "account"
+weight = 2120
+[[Languages.ru.menu.main]]
+URL = "/license/"
+hasChildren = "true"
+identifier = "license"
+name = "Получение лицензии"
+parent = "main-services"
+weight = 213
+[[Languages.ru.menu.main]]
+URL = "/license/#geo"
+identifier = "license-all"
+name = "Все страны"
+parent = "license"
+weight = 2131
+[[Languages.ru.menu.main]]
+URL = "/license/vu/"
+identifier = "2131"
+name = "Вануату"
+parent = "license"
+weight = 21311
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/gb/"
+identifier = "2132"
+name = "Великобритания"
+parent = "license"
+weight = 21312
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/cy/"
+identifier = "2133"
+name = "Кипр"
+parent = "license"
+weight = 21313
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/cr/"
+identifier = "2134"
+name = "Коста-Рика"
+parent = "license"
+weight = 21314
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/cw/"
+identifier = "2135"
+name = "Кюрасао"
+parent = "license"
+weight = 21315
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/mt/"
+identifier = "2136"
+name = "Мальта"
+parent = "license"
+weight = 21316
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/license/ee/"
+identifier = "2137"
+name = "Эстония"
+parent = "license"
+weight = 21317
+[Languages.ru.menu.main.params]
+pre = "/images/flag/gb.png"
+[[Languages.ru.menu.main]]
+URL = "/taxation/"
+hasChildren = true
+identifier = "secondary-services"
+name = "Дополнительные услуги"
+parent = "services"
+weight = 22
+[[Languages.ru.menu.main]]
+URL = "/taxation/"
+name = "Международное налоговое планирование и структурирование"
+parent = "secondary-services"
+weight = 221
+[[Languages.ru.menu.main]]
+URL = "/merchant/"
+name = "Открытие мерчант-счета"
+parent = "secondary-services"
+weight = 222
+[[Languages.ru.menu.main]]
+URL = "/maintenance/"
+name = "Сопровождение финансовых транзакций"
+parent = "secondary-services"
+weight = 223
+[[Languages.ru.menu.main]]
+URL = "/certification/"
+name = "Сертификация PCI DSS"
+parent = "secondary-services"
+weight = 224
+[[Languages.ru.menu.main]]
+URL = "#contact"
+name = "КОНТАКТЫ"
+weight = 5
+[Languages.ru.params.form]
+action = "/php/sendemail.php"
+enable = "true"
+method = "POST"
+title = "Получите бесплатную консультацию"
+title_sub = "Отправьте заявку, и менеджер Beforis свяжется с вами, чтобы согласовать детали."
+[[Languages.ru.params.form.field]]
+name = "name"
+placeholder = "Имя"
+required = "true"
+type = "text"
+[[Languages.ru.params.form.field]]
+name = "tel"
+placeholder = "Телефон"
+required = "true"
+type = "tel"
+[[Languages.ru.params.form.field]]
+name = "email"
+placeholder = "Email"
+required = "true"
+type = "email"
+[[Languages.ru.params.form.field]]
+name = "btn_submit"
+placeholder = "отправить"
+required = "true"
+type = "submit"
+[Languages.ru.params.partners]
+enable = "true"
+title = "Наши партнеры"
+[[Languages.ru.params.contacts]]
+description = "Beforis Limited \n\n\nRegistration Number: 2972879 \n\n\nCompany Address: Rm 7B, One Capital Place, \n\n\n18 Luard Road, Wan Chai, Hong Kong\n"
+icon = "icon-loc"
+title = "АДРЕС"
+[[Languages.ru.params.contacts]]
+email = "hi@beforis.com"
+icon = "icon-mail"
+title = "EMAIL"
+[params]
+GTM = "GTM-WHBQ3BV"
+description = "Beforis - мы помогаем расширить ваш бизнес по всему миру, включая вашу компанию, банковское дело и многое другое. Свяжитесь с нами для получения универсального набора инструментов, чтобы начать свой интернет-бизнес без хлопот."
+develop = "xfr"
+email = "hi@beforis.com"
+logo = "/images/beforis-black.png"
+logo_w = "120"
+logo_white = "/images/beforis-footer.png"
+site_url = "beforis.com"
+telegram = "https://t.me/Beforis"
+[[params.partner.item]]
+icon = "/images/partners/logo-1.svg"
+title = ""
+[[params.partner.item]]
+icon = "/images/partners/logo-2.svg"
+title = ""
+[[params.partner.item]]
+icon = "/images/partners/logo-3.svg"
+title = ""
+[[params.partner.item]]
+icon = "/images/partners/logo-4.svg"
+title = ""
+[[params.partner.item]]
+icon = "/images/partners/logo-5.svg"
+title = ""
+[[params.partner.item]]
+bg = true
+icon = "/images/partners/logo-6.svg"
+title = ""
+[[params.plugins.css]]
+link = "plugins/css/bootstrap.css"
+[[params.plugins.css]]
+link = "plugins/css/hover.css"
+[[params.plugins.css]]
+link = "plugins/css/owl.css"
+[[params.plugins.css]]
+link = "plugins/css/jquery-ui.css"
+[[params.plugins.css]]
+link = "plugins/css/jquery.bootstrap-touchspin.css"
+[[params.plugins.css]]
+link = "plugins/css/jquery.fancybox.min.css"
+[[params.plugins.css]]
+link = "plugins/css/jquery.mCustomScrollbar.min.css"
+[[params.plugins.css]]
+link = "plugins/css/animate.min.css"
+[[params.plugins.css]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+[[params.plugins.css]]
+link = "plugins/css/flaticon.css"
+[[params.plugins.css]]
+link = "plugins/css/animate.css"
+[[params.plugins.css]]
+link = "plugins/css/revolution/css/settings.css"
+[[params.plugins.css]]
+link = "plugins/css/revolution/css/layers.css"
+[[params.plugins.css]]
+link = "plugins/css/revolution/css/navigation.css"
+[[params.plugins.css]]
+link = "plugins/css/color-themes/default-theme.css"
+[[params.plugins.js]]
+link = "plugins/js/jquery.js"
+[[params.plugins.js]]
+link = "plugins/js/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.fancybox.js"
+[[params.plugins.js]]
+link = "plugins/js/owl.js"
+[[params.plugins.js]]
+link = "plugins/js/wow.js"
+[[params.plugins.js]]
+link = "plugins/js/appear.js"
+[[params.plugins.js]]
+link = "js/script.js"
+[params.preloader]
+enable = true

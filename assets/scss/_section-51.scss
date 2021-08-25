@@ -1,0 +1,45 @@
+
+/*** 
+
+====================================================================
+	Styled Pagination
+====================================================================
+
+***/
+
+.styled-pagination {
+    position: relative;
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0px 6px 0px 0px;
+
+        a {
+            position: relative;
+            display: inline-block;
+            line-height: 40px;
+            height: 44px;
+            font-size: 16px;
+            min-width: 44px;
+            color: #bdaca8;
+            font-weight: 700;
+            text-align: center;
+            background: $white;
+            border-radius: 50%;
+            border: 2px solid #bdaca8;
+            text-transform: capitalize;
+            transition: all 500ms ease;
+           
+            font-family: "Open Sans", sans-serif;
+
+            &:hover, &.active {
+                color: $white;
+                border-color: #bdaca8;
+                background-color: #bdaca8;
+            }
+            
+        }
+    }
+}
+

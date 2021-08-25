@@ -1,0 +1,64 @@
+/*Pdf Box*/
+
+.pdf-box {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.pdf-box .pdf-inner {
+    position: relative;
+    padding: 15px 20px 8px;
+    max-width: 400px;
+    width: 100%;
+    display: inline-block;
+    background-color: #494b55;
+}
+
+.pdf-box .pdf-inner .overlay-link {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.pdf-box .pdf-inner .content {
+    position: relative;
+    padding-left: 48px;
+}
+
+.pdf-box .pdf-inner .content .pdf-icon {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    color: $white;
+    font-size: 34px;
+    line-height: 1em;
+}
+
+.pdf-box .pdf-inner .content h3 {
+    position: relative;
+    color: $white;
+
+    @include font(20, 20*1.2, 600, $ffHeading);
+
+}
+
+.pdf-box .pdf-inner .content h3 span {
+    display: block;
+    color: #aaaaaa;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pdf-box .pdf-inner .content .download-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+    font-size: 46px;
+    line-height: 1em;
+    color: #bdaca8;
+}

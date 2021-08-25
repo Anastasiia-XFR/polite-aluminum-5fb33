@@ -1,0 +1,511 @@
+/*** 
+
+====================================================================
+	Shop Section
+====================================================================
+
+***/
+
+.shop-section {
+    position: relative;
+    padding: 95px 0px 60px;
+}
+
+.shop-section .sec-title-two {
+    margin-bottom: 45px;
+}
+
+.shop-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.shop-item .inner-box {
+    position: relative;
+}
+
+.shop-item .inner-box .image {
+    position: relative;
+}
+
+.shop-item .inner-box .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.shop-item .inner-box .image .overlay-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+   
+}
+
+.shop-item .inner-box:hover .image .overlay-box {
+    opacity: 1;
+}
+
+.shop-item .inner-box .lower-content {
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.shop-item .inner-box .lower-content h3 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+.shop-item .inner-box .lower-content h3 a {
+    color: #494b55;
+    transition: all 0.3s ease;
+    
+}
+
+.shop-item .inner-box .lower-content h3 a:hover {
+    color: #c08c4d;
+}
+
+.shop-item .inner-box .lower-content .price {
+    position: relative;
+    color: #bdaca8;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.shop-item .inner-box .lower-content .theme-btn {
+    padding: 8px 35px 8px;
+}
+
+.shop-item .inner-box .image .btn-style-eight {
+    position: relative;
+    top: 46%;
+    margin-top: -23px;
+}
+
+
+/*** 
+
+====================================================================
+	Product Tabs Style
+====================================================================
+
+***/
+.shop-item-two {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shop-item-two .inner-box {
+    position: relative;
+    background-color: #f1f2f2;
+}
+
+.shop-item-two .inner-box .image {
+    position: relative;
+}
+
+.shop-item-two .inner-box .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.shop-item-two .inner-box .lower-content {
+    position: relative;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.shop-item-two .inner-box .lower-content h3 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.shop-item-two .inner-box .lower-content h3 a {
+    color: #494b55;
+    transition: all 0.3s ease;
+    
+}
+
+.shop-item-two .inner-box .lower-content .price {
+    position: relative;
+    color: #bdaca8;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.shop-single-section {
+    position: relative;
+    padding: 100px 0px 0px;
+}
+
+.shop-single {
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 90px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+.shop-single .product-details .prod-tabs {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn {
+    position: relative;
+    top: 1px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+    background: #bdaca8;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 11px 30px 9px;
+    transition: all 500ms ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: -2px;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color: #bdaca8;
+   
+    transition: all 300ms ease;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn::before,
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn:hover::before {
+    opacity: 1;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn:hover:after,
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: $white;
+}
+
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn:hover,
+.shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn {
+    color: #494b55;
+    border-color: #e2e2e2;
+    background: $white;
+}
+
+.shop-single .product-details .prod-tabs .tabs-content {
+    position: relative;
+    padding: 50px 35px 30px;
+    border: 1px solid #e2e2e2;
+    border-top: 0px;
+}
+
+.shop-single .product-details .prod-tabs .tabs-content .tab {
+    position: relative;
+    display: none;
+    border-top: 0px;
+}
+
+.shop-single .product-details .prod-tabs .tabs-content .tab.active-tab {
+    display: block;
+}
+
+.shop-single .product-details .prod-tabs .tabs-content .tab .content {
+    position: relative;
+}
+
+.shop-single .product-details .prod-tabs .tabs-content .tab .content p {
+    position: relative;
+    font-size: 16px;
+    color: #797979;
+    line-height: 1.7em;
+    margin-bottom: 25px;
+}
+
+/*** 
+
+====================================================================
+	Comments Area
+====================================================================
+
+ ***/
+
+ .shop-single .comments-area {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.shop-single .group-title {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.shop-single .group-title h2 {
+    position: relative;
+    font-size: 24px;
+    color: #232628;
+    font-weight: 600;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.shop-single .group-title h2:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -1px;
+    width: 55px;
+    height: 2px;
+    background-color: #bdaca8;
+}
+
+.shop-single .comments-area .comment-box {
+    position: relative;
+    margin-bottom: 30px;
+  
+    transition: all 300ms ease;
+}
+
+.shop-single .comments-area .comment-box:nth-child(1) {
+    padding-top: 0px;
+}
+
+.shop-single .comments-area .comment-box:hover {
+    border-color: #eb5310;
+}
+
+.shop-single .comments-area .comment {
+    position: relative;
+    font-size: 14px;
+    padding: 0px 0px 0px 90px;
+}
+
+.shop-single .comments-area .comment .comment-inner {
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid #f4f4f4;
+}
+
+.shop-single .comments-area .comment .comment-inner .rating {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.shop-single .comments-area .comment .comment-inner .rating .fa {
+    display: inline-block;
+    color: #bdaca8;
+}
+
+.shop-single .comments-area .comment-box .author-thumb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 20px;
+}
+
+.shop-single .comments-area .comment-box .author-thumb img {
+    width: 60px;
+    display: block;
+}
+
+.shop-single .comments-area .comment-info {
+    position: relative;
+    color: #232527;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.shop-single .comments-area .comment-box .text {
+    color: #848484;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 0px;
+}
+
+/*Comment Form*/
+
+.shop-comment-form {
+    position: relative;
+}
+
+.shop-comment-form h2 {
+    position: relative;
+    color: #232628;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.shop-comment-form h2:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -1px;
+    width: 55px;
+    height: 2px;
+    background-color: #bdaca8;
+}
+
+.shop-comment-form .group-title {
+    margin-bottom: 20px;
+}
+
+.shop-comment-form .rating-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shop-comment-form .rating-box .text {
+    position: relative;
+    font-size: 16px;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.shop-comment-form .rating-box .rating {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #ebebeb;
+}
+
+.shop-comment-form .rating-box .rating:last-child {
+    border-right: 0px;
+}
+
+.shop-comment-form .rating-box .rating .fa {
+    position: relative;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.shop-comment-form .rating-box .rating a {
+    position: relative;
+    color: #d6d6d6;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.shop-comment-form .rating-box .rating a:hover {
+    color: #bdaca8;
+}
+
+.shop-comment-form .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.shop-comment-form .form-group label {
+    position: relative;
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shop-comment-form .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+.shop-comment-form .form-group input[type="text"],
+.shop-comment-form .form-group input[type="password"],
+.shop-comment-form .form-group input[type="tel"],
+.shop-comment-form .form-group input[type="email"],
+.shop-comment-form .form-group select {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 28px;
+    padding: 10px 15px;
+    border: 1px solid #efefef;
+    height: 50px;
+    color: #848484;
+    font-weight: 300;
+    background: $white;
+   
+    transition: all 300ms ease;
+}
+
+.shop-comment-form .form-group input[type="text"]:focus,
+.shop-comment-form .form-group input[type="password"]:focus,
+.shop-comment-form .form-group input[type="tel"]:focus,
+.shop-comment-form .form-group input[type="email"]:focus,
+.shop-comment-form .form-group select:focus,
+.shop-comment-form .form-group textarea:focus {
+    border-color: #bdaca8;
+}
+
+.shop-comment-form .form-group textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 26px;
+    padding: 10px 15px;
+    color: #848484;
+    border: 1px solid #efefef;
+    height: 115px;
+    font-weight: 300;
+    background: $white;
+    resize: none;
+ 
+    transition: all 300ms ease;
+}
+
+.shop-comment-form button {
+    position: relative;
+    margin-top: 10px;
+}
+
+.shop-comment-form input:focus,
+.shop-comment-form select:focus,
+.shop-comment-form textarea:focus {
+    border-color: #f06529;
+}

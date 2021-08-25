@@ -1,0 +1,33 @@
+/*** 
+
+====================================================================
+	Portfolio Single Section
+====================================================================
+
+***/
+
+.portfolio-single-section {
+    position: relative;
+    padding: 95px 0px 60px;
+
+    .title-box {
+        position: relative;
+        margin-bottom: 65px;
+
+        .text {
+            position: relative;
+            max-width: 970px;
+            color: $grey15;
+            
+            font-size: 16px;
+        }
+
+        h2 {
+            position: relative;
+            color: $grey4;
+            
+            @include font(60, 60, 700);
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+
+.thanks-page {
+    height: 100vh;
+    background: #f5f3f2;
+
+    .main-header .main-box .outer-container {
+        border-bottom: none;
+    }
+
+    &-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: calc(100vh - 71px);
+    
+        & > div {
+            text-align: center;
+        }
+    
+        h2 {
+            width: 100%;
+            font-size: 32px;
+            color: #494b55;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+        }
+    
+        img {
+            width: 80px;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+    }
+}
+
+

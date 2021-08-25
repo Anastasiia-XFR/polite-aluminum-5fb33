@@ -1,0 +1,36 @@
+<section class="main-slider main-slider-two" style="background-image: url({{ .hero_bg | relURL }});">
+    <div class="auto-container">
+        <div class="row">
+            <div class="content animated fadeInUp">
+                {{ if .hero_title_sup }}
+                <div class="title">
+                    {{ .hero_title_sup | markdownify | truncate 150 }}
+                </div>
+
+                {{ else }}
+                <div class="title">
+                    {{ .hero_title_sup | markdownify | truncate 150 }}
+                </div>
+                {{ end }}
+
+                <h2>
+                    {{ .hero_title | markdownify | truncate 150 }}
+                </h2>
+
+                {{ if .hero_title_sub }}
+                <div class="text">
+                   {{ .hero_title_sub | markdownify | truncate 150 }}
+                </div>
+                {{ end }}
+
+                {{ if .hero_btn_label }}
+                <div class="btn-ct btn-ct--left">
+                    <a class="fadeInUp btn-style-five btn-style-five--white" href=" {{ .hero_btn_url }}" style="display: block;width: fit-content;">
+                    {{ .hero_btn_label }}
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

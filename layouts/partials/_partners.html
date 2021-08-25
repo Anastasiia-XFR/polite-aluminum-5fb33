@@ -1,0 +1,18 @@
+
+{{ if .Site.Params.Partners }}
+<section class="about-section-three nopt">
+	<div class="auto-container">
+		<div class="sec-title ">
+			<h3>{{ .Site.Params.partners.title }}</h3>
+		</div>
+		<div class="logo-blocks">
+			{{ range .Site.Params.partner.item }}
+			<div {{ if .bg }} class="logo-block logo-block--bg" {{ else }} class="logo-block" {{ end }}>
+				<img src="{{ .icon | relURL }}" alt="{{ .title }}">
+			</div>
+			{{ end }}
+		
+		</div>
+	</div>
+</section>
+{{ end }}

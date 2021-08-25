@@ -1,0 +1,190 @@
+
+/*** 
+
+====================================================================
+	Shop Single Section
+====================================================================
+
+***/
+
+
+
+.product-details .basic-details {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.product-details .image-column,
+.product-details .info-column {
+    margin-bottom: 20px;
+}
+
+.product-details .image-column .image-box {
+    padding-right: 40px;
+}
+
+.product-details .info-column .inner-column {
+    position: relative;
+    padding-left: 15px;
+}
+
+.product-details .image-column .image-box img {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.product-details .basic-details h4 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: -5px 0px 0px;
+    line-height: 1.2em;
+    color: $grey4;
+    padding-bottom: 20px;
+}
+
+.product-details .basic-details .text {
+    position: relative;
+    color: #797979;
+    font-size: 16px;
+    line-height: 1.7em;
+    padding: 25px 0px;
+    margin-bottom: 22px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.product-details .basic-details .price {
+    position: relative;
+    color: $grey4;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.product-details .basic-details .price span {
+    font-weight: 700;
+    font-size: 22px;
+    color: $grey4;
+    margin-left: 10px;
+}
+
+.product-details .basic-details .quantity-spinner,
+.cart-section input.quantity-spinner {
+    line-height: 24px;
+    padding: 10px 15px !important;
+    height: 46px !important;
+    box-shadow: none !important;
+}
+
+.product-details .basic-details .bootstrap-touchspin .input-group-btn-vertical>.btn,
+.cart-section .bootstrap-touchspin .input-group-btn-vertical>.btn {
+    padding: 11px 10px;
+    background: #f4f5f6;
+}
+
+.product-details .bootstrap-touchspin .input-group-btn-vertical i,
+.cart-section .bootstrap-touchspin .input-group-btn-vertical i {
+    top: 6px;
+}
+
+.product-details .basic-details .item-quantity {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.product-details .info-column .inner-column .btn-style-eight {
+    padding: 11px 36px;
+}
+
+.product-details .basic-details .item-quantity .field-label {
+    float: left;
+    color: $grey4;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.product-details .basic-details .item-quantity .bootstrap-touchspin {
+    width: 80px;
+}
+
+
+.prod-tabs .tabs-content .tab .title {
+    position: relative;
+    color: #232527;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+/*** 
+
+====================================================================
+	Products Section
+====================================================================
+
+***/
+
+.products-section {
+    position: relative;
+    padding: 80px 0px 50px;
+    background-size: cover;
+}
+
+.products-section:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.products-section .product-column {
+    position: relative;
+}
+
+
+.products-section .content-column {
+    position: relative;
+}
+
+.products-section .content-column .inner-column {
+    position: relative;
+    padding-left: 45px;
+}
+
+.products-section .content-column .inner-column h2 {
+    position: relative;
+    color: $white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin-bottom: 25px;
+}
+
+.products-section .content-column .inner-column h2 span {
+    color: #c08c4d;
+    font-size: 40px;
+    display: block;
+}
+
+.products-section .content-column .inner-column .text {
+    position: relative;
+    color: $white;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 38px;
+}
+
+.products-section .content-column .inner-column .theme-btn {
+    font-size: 18px;
+    padding: 13px 25px 11px;
+}
